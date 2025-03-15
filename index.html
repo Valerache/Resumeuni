@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valerii Chechin - Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <img src="img/photo.jpg" alt="Valerii Chechin" class="photo" />
+        <section class="section contact-info">
+          <h2>Kontakt</h2>
+          <p><i class="fas fa-envelope"></i> <span id="email"></span></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span id="address"></span></p>
+          <p><i class="fas fa-phone"></i> <span id="phone"></span></p>
+          <p><i class="fas fa-birthday-cake"></i> <span id="birthdate"></span></p>
+          <p><i class="fas fa-flag"></i> <span id="nationality"></span></p>
+        </section>
+        <section class="section">
+          <h2>Kompetenzen</h2>
+          <ul id="kompetenzen"></ul>
+        </section>
+        <section class="section">
+          <h2>Sprachkenntnisse</h2>
+          <ul id="sprachkenntnisse"></ul>
+        </section>
+        <section class="section">
+          <h2>Arbeitszeit</h2>
+          <ul id="arbeitszeit"></ul>
+        </section>
+        <section class="section">
+          <h2>Führerschein</h2>
+          <ul id="fuhrerschein"></ul>
+        </section>
+      </aside>
+      <div class="main-content">
+        <header>
+          <h1 id="name"></h1>
+          <p id="specialization"></p>
+        </header>
+        <section class="section">
+          <h2>Berufserfahrung</h2>
+          <h3 id="berufserfahrung-title"></h3>
+          <p><strong id="berufserfahrung-company"></strong> - <span id="berufserfahrung-location"></span></p>
+          <p><em id="berufserfahrung-dates"></em></p>
+          <ul id="berufserfahrung-tasks"></ul>
+        </section>
+        <section class="section">
+          <h2>Ausbildung</h2>
+          <h3 id="ausbildung-degree"></h3>
+          <p><strong id="ausbildung-university"></strong> - <span id="ausbildung-location"></span></p>
+          <p><em id="ausbildung-dates"></em></p>
+        </section>
+        <section class="section">
+          <h2>Zertifizierungen & Kurse</h2>
+          <ul id="zertifizierungen"></ul>
+        </section>
+        <section class="section">
+          <h2>Beispiele von Projekten</h2>
+          <ul id="projekte"></ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Кнопка для открытия формы -->
+    <button id="edit-btn">Edit Resume</button>
+
+    <!-- Форма редактирования (скрыта по умолчанию) -->
+    <div id="edit-form" class="edit-form">
+      <h2>Edit Resume</h2>
+      <form id="resume-form">
+        <label>Name: <input type="text" id="form-name" /></label>
+        <label>Specialization: <input type="text" id="form-specialization" /></label>
+        <label>Email: <input type="text" id="form-email" /></label>
+        <label>Address: <input type="text" id="form-address" /></label>
+        <label>Phone: <input type="text" id="form-phone" /></label>
+        <label>Birthdate: <input type="text" id="form-birthdate" /></label>
+        <label>Nationality: <input type="text" id="form-nationality" /></label>
+        <label>Kompetenzen (через запятую): <textarea id="form-kompetenzen"></textarea></label>
+        <label>Sprachkenntnisse (через запятую): <textarea id="form-sprachkenntnisse"></textarea></label>
+        <label>Arbeitszeit (через запятую): <textarea id="form-arbeitszeit"></textarea></label>
+        <label>Führerschein (через запятую): <textarea id="form-fuhrerschein"></textarea></label>
+        <label>Berufserfahrung - Title: <input type="text" id="form-berufserfahrung-title" /></label>
+        <label>Berufserfahrung - Company: <input type="text" id="form-berufserfahrung-company" /></label>
+        <label>Berufserfahrung - Location: <input type="text" id="form-berufserfahrung-location" /></label>
+        <label>Berufserfahrung - Dates: <input type="text" id="form-berufserfahrung-dates" /></label>
+        <label>Berufserfahrung - Tasks (через запятую): <textarea id="form-berufserfahrung-tasks"></textarea></label>
+        <label>Ausbildung - Degree: <input type="text" id="form-ausbildung-degree" /></label>
+        <label>Ausbildung - University: <input type="text" id="form-ausbildung-university" /></label>
+        <label>Ausbildung - Location: <input type="text" id="form-ausbildung-location" /></label>
+        <label>Ausbildung - Dates: <input type="text" id="form-ausbildung-dates" /></label>
+        <label>Zertifizierungen (через запятую): <textarea id="form-zertifizierungen"></textarea></label>
+        <label>Projekte (формат: title,url;title,url): <textarea id="form-projekte"></textarea></label>
+        <button type="submit">Save</button>
+        <button type="button" id="close-form">Close</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
